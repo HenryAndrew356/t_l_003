@@ -1,7 +1,15 @@
+
+
 $(document).ready(function () {
     $('#task-modal').on('show.bs.modal', function (event) {
+        
+        //  
         const button = $(event.relatedTarget)
+
+        //  
         const taskID = button.data('source')
+
+        //
         const content = button.data('content')
         const modal = $(this)
         if (taskID === 'New Task') {
